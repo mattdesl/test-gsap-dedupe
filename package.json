@@ -1,0 +1,50 @@
+{
+  "name": "test-glslify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "test-glslify-require": "git://github.com/mattdesl/test-glslify-require"
+  },
+  "devDependencies": {
+    "brfs": "^1.2.0",
+    "browserify": "latest",
+    "browserify-shim": "^3.7.0",
+    "grunt": "^0.4.4",
+    "grunt-browserify": "~2.1.0",
+    "grunt-watchify": "^0.1.0",
+    "handlebars": "1.3.0",
+    "hbsfy": "~1.3.2",
+    "load-grunt-tasks": "^1.0.0"
+  },
+  "browserify": {
+    "transform": [
+      "hbsfy",
+      "brfs",
+      "browserify-shim"
+    ]
+  },
+  "scripts": {},
+  "browserify-shim": {
+    "three": "global:THREE",
+    "sea3D": "global:SEA3D"
+  },
+  "browser": {
+    "settings": "./src/settings.js"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/test-glslify.git"
+  },
+  "homepage": "https://github.com/mattdesl/test-glslify",
+  "bugs": {
+    "url": "https://github.com/mattdesl/test-glslify/issues"
+  }
+}
