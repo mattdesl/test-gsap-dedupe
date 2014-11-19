@@ -1,2 +1,4 @@
-var external = require('test-glslify-require')
-console.log(external)
+var foo = require('gsap')
+console.log(foo)
+
+var next = require('test-glslify-require')

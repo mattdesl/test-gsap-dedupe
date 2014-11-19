@@ -10,6 +10,8 @@
     "url": "https://github.com/mattdesl"
   },
   "dependencies": {
+    "browserify": "^6.3.2",
+    "gsap": "^1.14.2",
     "test-glslify-require": "git://github.com/mattdesl/test-glslify-require"
   },
   "devDependencies": {
