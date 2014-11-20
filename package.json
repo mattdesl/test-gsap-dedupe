@@ -12,7 +12,8 @@
   "dependencies": {
     "browserify": "^6.3.2",
     "clamp": "^1.0.1",
-    "gsap": "^1.14.2"
+    "gsap": "^1.14.2",
+    "tap": "^0.4.13"
   },
   "devDependencies": {},
   "browserify": {
