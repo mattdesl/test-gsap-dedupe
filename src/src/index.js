@@ -1,2 +1,2 @@
-var gsap = require('gsap')
-console.log(gsap)
+var ret = require('clamp')
+console.log(ret)

@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "browserify": "^6.3.2",
+    "clamp": "^1.0.1",
     "gsap": "^1.14.2"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "browserify": {
     "transform": [
       "hbsfy",
@@ -25,7 +25,6 @@
   "scripts": {
     "bundle": "browserify --full-paths --debug index.js -o bundle.js",
     "bundle2": "browserify --debug index.js -o bundle.js"
-
   },
   "browserify-shim": {
     "three": "global:THREE",
