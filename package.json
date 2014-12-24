@@ -13,12 +13,12 @@
     "gsap": "1.14.2"
   },
   "devDependencies": {
-    "browserify": "^8.0.1",
+    "browserify": "^5.7.0",
     "tape": "^3.0.3"
   },
   "scripts": {
-    "bundle1": "browserify test.js -o bundle.js",
-    "bundle2": "browserify test.js --full-paths  -o bundle.js"
+    "success": "browserify test.js -o bundle.js",
+    "failure": "browserify test.js --full-paths  -o bundle.js"
   },
   "keywords": [],
   "repository": {
