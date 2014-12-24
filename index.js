@@ -1,2 +1,2 @@
-//index.js <= duplicate of => src/foo.js
-module.exports = require('./src/index.js')
+var api = require('gsap')
+module.exports = api

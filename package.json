@@ -1,5 +1,5 @@
 {
-  "name": "test-glslify",
+  "name": "test-gsap-dedupe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,37 +10,23 @@
     "url": "https://github.com/mattdesl"
   },
   "dependencies": {
-    "browserify": "^6.3.2",
-    "clamp": "^1.0.1",
-    "gsap": "^1.14.2",
-    "tap": "^0.4.13"
+    "gsap": "1.14.2"
   },
-  "devDependencies": {},
-  "browserify": {
-    "transform": [
-      "hbsfy",
-      "brfs",
-      "browserify-shim"
-    ]
+  "devDependencies": {
+    "browserify": "^8.0.1",
+    "tape": "^3.0.3"
   },
   "scripts": {
-    "bundle": "browserify --full-paths --debug index.js -o bundle.js",
-    "bundle2": "browserify --debug index.js -o bundle.js"
-  },
-  "browserify-shim": {
-    "three": "global:THREE",
-    "sea3D": "global:SEA3D"
-  },
-  "browser": {
-    "settings": "./src/settings.js"
+    "bundle1": "browserify test.js -o bundle.js",
+    "bundle2": "browserify test.js --full-paths  -o bundle.js"
   },
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mattdesl/test-glslify.git"
+    "url": "git://github.com/mattdesl/test-gsap-dedupe.git"
   },
-  "homepage": "https://github.com/mattdesl/test-glslify",
+  "homepage": "https://github.com/mattdesl/test-gsap-dedupe",
   "bugs": {
-    "url": "https://github.com/mattdesl/test-glslify/issues"
+    "url": "https://github.com/mattdesl/test-gsap-dedupe/issues"
   }
 }
