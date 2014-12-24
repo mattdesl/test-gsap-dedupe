@@ -9,6 +9,7 @@
   "author": "Matt DesLauriers <dave.des@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "clamp": "1.0.1",
     "gsap": "1.14.2"
   }
 }
